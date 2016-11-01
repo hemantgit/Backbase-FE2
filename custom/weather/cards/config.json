@@ -1,0 +1,6 @@
+{
+  "iconBaseURL":"http://openweathermap.org/img/w/",
+  "iconExtension":".png",
+  "apiKey":"cff4aa123339475800688f1a575cc8dd",
+  "apiBaseURL":"http://api.openweathermap.org/data/2.5/"
+}

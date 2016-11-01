@@ -1,0 +1,78 @@
+.sunrise{
+font-size: 24px;
+margin-right: 7px;
+color:darkorange;
+background-color: yellow;
+border-radius: 26px;
+}
+
+.sunrise-time{
+    font-size: 14px;
+    font-weight: bolder;
+    margin-right: 3px;
+}
+
+.sunset{
+    font-size: 24px;
+    margin-right: 2px;
+    margin-left: 19px;
+    color:yellow;
+    background-color: darkorange;
+    border-radius: 26px;
+}
+
+.sunset-time{
+    font-size: 14px;
+    font-weight: bolder;
+    margin-right: -2px;
+}
+
+.data-display{
+    margin-bottom: 0px;
+    zoom:0.95;
+}
+
+.predicted-sealevel{
+    padding:4px;
+    padding-bottom: 0px;
+}
+
+.predicted-sealevel-display{
+    margin-bottom:0px;
+}
+
+.predicted-sealevel-display-row{
+    padding-bottom:0px;
+    font-size:13px;
+    color: darkorange;
+}
+
+.sealevel-icon{
+    margin-bottom: 0px;
+}
+
+.sealevel-icon-row{
+    padding:0px;
+}
+
+.predicted-sealevel-widget{
+    padding:0px;
+}
+
+.predicted-sealevel{
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.utc-time{
+    font-size:8px;
+}
+
+.display-country{
+    font-size: 16px;
+}
+
+.display-sealevel{
+    padding: 0px 0px 0px 0px;
+    font-size: 14px;
+}

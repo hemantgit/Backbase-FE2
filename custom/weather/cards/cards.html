@@ -1,0 +1,51 @@
+<div class="col s12 m12 l4">
+    <!--Designing Card template-->
+    <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+            <canvas class="chart chart-line" chart-data="getChartData(country)" chart-labels="getChartLabels(country)"
+                    chart-series="getChartSeries(country)" chart-colors="['random']"></canvas>
+        </div>
+        <!--Displaying content inside cards-->
+        <div class="card-content">
+            <!--Display City name and Country name-->
+            <span class="card-title activator grey-text text-darken-4">{{city}} <small class="display-country">({{country}})</small>
+                <!--Open Card Button-->
+                <i class="fa fa-bars right"></i>
+            </span>
+            <p>
+                <!--Displaying sunrise time-->
+                <i class="fa fa-sun-o sunrise"></i>&nbsp;
+                <span class="sunrise-time">{{cardData.currentSunrise}} <span class="utc-time">UTC</span></span>
+                <!--Displaying sunset time-->
+                <i class="fa fa-sun-o sunset" ></i>&nbsp;
+                <span class="sunset-time">{{cardData.currentSunset}} <span class="utc-time">UTC</span></span>
+            </p>
+        </div>
+        <!--Displaying data for next 5 days-->
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">
+                <i class="fa fa-line-chart"></i>&nbsp;Sea Level
+                <i class="fa fa-times right"></i></span>
+            <div class="row data-display">
+                <div class="col s6 m6 l6" ng-repeat="predictedWeather in cardData.predictedWeathers">
+                    <div class="card">
+                        <div class="card-content predicted-sealevel" >
+                            <div class="row predicted-sealevel-display" >
+                                <!--Displaying the next 5 dates-->
+                                <div class="col s12 m12 l12 predicted-sealevel-display-row">
+                                    {{predictedWeather.date}}
+                                </div>
+                            </div>
+                            <!--Display the predicted sea level-->
+                            <div class="row sealevel-icon" >
+                                <div class="col s12 m12 l12 predicted-sealevel-widget" >
+                                    <div class="predicted-sealevel display-sealevel"><b>{{predictedWeather.sea_level}}</b> m a.s.l</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

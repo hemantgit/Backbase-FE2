@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="weather">
+<!--HEAD start-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Backbase Assignment 2</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" rel="stylesheet">
+    <link href="custom/css/weather.css" rel="stylesheet">
+    <link href="custom/weather/cards/cards.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+</head>
+<!--HEAD ends-->
+<!--BODY starts-->
+<body background="custom/images/Mountain-wallpaper-HD.jpg">
+<!--header starts-->
+<div class="header">
+    <h3>BACKBASE ASSIGNMENT - FE 2</h3>
+</div>
+<!--header ends-->
+    <!--main container for page-->
+    <div class="container">
+        <div class="row">
+            <!--Using Custom Components-->
+            <weather-card city="Barcelona" country="Spain"></weather-card>
+            <weather-card city="Rome" country="Italy"></weather-card>
+            <weather-card city="Amsterdam" country="Netherlands"></weather-card>
+        </div>
+        <div class="row">
+            <div class="col s12 m12 l2"></div>
+            <weather-card city="Venice" country="Italy"></weather-card>
+            <weather-card city="Paris" country="Spain"></weather-card>
+            <div class="col s12 m12 l2"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-chart.js/1.0.3/angular-chart.min.js"></script>
+    <script src="custom/weather/app.js"></script>
+    <script src="custom/weather/cards/cards-controller.js"></script>
+    <script src="custom/weather/cards/cards.js"></script>
+    <script src="custom/weather/cards/weather-service.js"></script>
+</body>
+<!--BODY ends-->
+</html>

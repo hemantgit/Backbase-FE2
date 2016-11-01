@@ -1,0 +1,29 @@
+.card{
+    padding:10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-bottom:10px solid #443747;
+}
+.card:hover{
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    border-bottom:10px solid #febb0e;
+}
+footer p{
+    float: right;
+    color:#fff;
+    font-family:'Roboto Slab', serif;
+    font-size:12px;
+    padding-right:20px;
+}
+
+.container-card{
+    zoom: 0.8;
+    margin-top: 50px;
+}
+
+.header{
+    background:#443747;
+    padding:10px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto Slab', serif; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
